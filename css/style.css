@@ -187,3 +187,56 @@ a {
     .po6{order:6;}
 
 }
+
+/*미디어 쿼리 : 스마트폰 모바일기기*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar {
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 8px 24px;
+    }
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar_toggle{
+        display: block;
+    }
+    .navbar_menu.active, .navbar_icons.active{
+        display: flex;
+    }
+    .main_section {
+        background-size: cover;
+    }
+    #warp{
+        width: auto;
+    }
+    .portfolio{
+       width: 90%;
+   }
+   /*포트폴리오 작품 DIV 안에서의 사이즈*/
+   .portfolio.po2, .po4, .po6{
+       width: 80%;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+   /*포트폴리오 세로 배열 순서 조정*/
+   .po1{order:1;}
+   .po2{order:2;}
+   .po3{order:3;}
+   .po4{order:4;}
+   .po5{order:5;}
+   .po6{order:6;}
+
+}
